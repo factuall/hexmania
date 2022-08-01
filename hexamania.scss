@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper_hexamania {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 88, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  .scene {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    .hex {
+      position: absolute;
+      path {
+        stroke: #fff;
+      }
+    }
+    .hex:nth-of-type(1){
+      top: -25px;
+    }
+    .hex:nth-of-type(2){
+      top: -37px;
+      left: 21px;
+    }
+    .hex:nth-of-type(3){
+      top: -37px;
+      left: -21px;
+    }
+    .hex:nth-of-type(4){
+      top: -75px;
+    }
+
+
+  }
+  // @for $i from 0 to 5 {
+  //     .hex:nth-child(#{$i + 1}){
+  //       --top:#{25px * $i};
+  //       --left:#{25px * $i};
+  //     }
+  // }
+}
